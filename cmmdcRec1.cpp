@@ -1,5 +1,7 @@
 #include <iostream>
-#include <cstdlib>
+#include <cstdio>
+#include <string>
+
 
 using namespace std;
 
@@ -15,17 +17,17 @@ int cmmdc(int a, int b, int r){
 }
 
 int main(int argc, char const *argv[]) {
-  int intare1,intrare2;
+  int intrare1,intrare2;
   string entry;
 
   printf("Intrare 1: ");
   getline(cin,entry);
-  intrare1=stoi(entry);
+  intrare1=string::stoi(entry);
 
-  printf("Intare 2: ");
+  printf("Intrare 2: ");
   getline(cin,entry);
-  intrare2=stoi(entry);
+  intrare2=string::stoi(entry);
 
-  printf("Rezultat: %d\n",cmmdc(intare1,intrare2,1));
+  printf("Rezultat: %d\n",cmmdc(intrare1,intrare2,1));
   return 0;
 }
