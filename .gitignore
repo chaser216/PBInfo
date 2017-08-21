@@ -1,7 +1,12 @@
+#Particular Cases
+.vscode/
+
 #Extensionless files
 *
 !/**/
 !*.*
+
+
 
 # Prerequisites
 *.d
